@@ -22,7 +22,7 @@ var x = 5;
 console.log(y);
 let y = 10;
 ```
-a) A saída será undefined seguido de erro 
+a) A saída será undefined seguido de erro ✔
 
 b) A saída será 5 seguido de 10
 
@@ -30,6 +30,7 @@ c) A saída será undefined seguido de undefined
 
 d) A saída será erro em ambas as linhas que utilizam console.log
 
+A alternativa correta é a A), pois as variaveis foram colocadas no lugar errado, e então a var dá undefined porque ... e a let da erro pois ...
 
 **2) O seguinte código JavaScript tem um erro que impede sua execução correta. Analise e indique a opção que melhor corrige o problema. Justifique sua resposta.**
 
@@ -45,12 +46,13 @@ console.log(soma(2, 0));
 
 a) Substituir if (a || b === 0) por if (a === 0 || b === 0)
 
-b) Substituir if (a || b === 0) por if (a === 0 && b === 0)
+b) Substituir if (a || b === 0) por if (a === 0 && b === 0) ✔
 
 c) Substituir if (a || b === 0) por if (a && b === 0)
 
 d) Remover completamente a verificação if (a || b === 0)
 
+A resposta correta é a B), pois antes o codigo tava lendo que se em um dos numeros da soma fosse 0 daria erro, mas o certo seria ele fala isso do resultado, então trocando para o codigo da alternativa b) ele faz o certo lendo o resultado que não pode dá 0.
 ______
 **3) Ao executar esse código, qual será a saída no console? Indique a alternativa correta e justifique sua resposta.**
 ```javascript
@@ -78,12 +80,13 @@ console.log(calcularPreco("eletrônico"));
 
 a) O código imprime 1000.
 
-b) O código imprime 200.
+b) O código imprime 200.✔
 
 c) O código imprime 50.
 
 d) O código gera um erro.
 
+A alternativo correta é a B), pois a falta do break no case "eletrônico" faz a execução passar direto por ele e ir para case "vestuário".
 ______
 **4) Ao executar esse código, qual será a saída no console? Indique a alternativa correta e justifique sua resposta.**
 ```javascript
@@ -99,7 +102,9 @@ b) 6
 
 c) 18
 
-d) 24
+d) 24✔
+
+A alternativa correta é a D), pois no primeiro passo ele dobra todos os numeros da array, deois ele filtra os numeros maiores que 5 e depos ele soma os valores maoiores que 5.
 ______
 **5) Qual será o conteúdo do array lista após a execução do código? Indique a alternativa correta e justifique sua resposta.**
 
@@ -113,9 +118,11 @@ a) ["banana", "maçã", "uva", "abacaxi", "manga", "laranja"]
 
 b) ["banana", "abacaxi", "manga"]
 
-c) ["banana", "abacaxi", "manga", "laranja"]
+c) ["banana", "abacaxi", "manga", "laranja"]✔
 
 d) ["banana", "maçã", "uva", "abacaxi", "manga"]
+
+A resposta correta é a C), pois no codigo ele fala para colocar essas duas frutas nos lugares 1 e 2, e como já tem frutas lá ele coloca no lugar delas.
 ______
 **6) Abaixo há duas afirmações sobre herança em JavaScript. Indique a alternativa correta e justifique sua resposta**
 
@@ -125,7 +132,7 @@ II. Em JavaScript, a herança é implementada através da palavra-chave `extends
 
 a) As duas afirmações são verdadeiras, e a segunda justifica a primeira.
 
-b) As duas afirmações são verdadeiras, mas a segunda não justifica a primeira.
+b) As duas afirmações são verdadeiras, mas a segunda não justifica a primeira.✔
 
 c) A primeira afirmação é verdadeira, e a segunda é falsa.
 
@@ -165,7 +172,7 @@ III) O código não funciona corretamente, pois Funcionario não pode herdar de 
 
 Quais das seguintes afirmações são verdadeiras sobre o código acima?
 
-a) I e II são verdadeiras.
+a) I e II são verdadeiras.✔
 
 b) I, II e III são verdadeiras.
 
@@ -173,6 +180,7 @@ c) Apenas II é verdadeira.
 
 d) Apenas I é verdadeira.
 
+A alternativa correta é a A), porque e afirmativa III não está correta, JavaScript suporta herança de classe.
 ______
 
 **8) Analise as afirmações a seguir. Indique a alternativa correta e justifique sua resposta.**
@@ -182,7 +190,7 @@ ______
 
 a) A asserção é falsa e a razão é verdadeira.
 
-b) A asserção é verdadeira e a razão é falsa.
+b) A asserção é verdadeira e a razão é falsa.✔
 
 c) A asserção é verdadeira e a razão é verdadeira, mas a razão não explica a asserção.
 
