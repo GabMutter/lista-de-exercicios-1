@@ -211,10 +211,55 @@ function somaArray(numeros) {
 }
 console.log(somaArray([1, 2, 3, 4]));
 ```
+Código corrigido:
+```javascript
+function somaArray(numeros) {
+  let soma = 0;
+  for (let i = 0; i < numeros.length; i++) {  //fazendo o codigo ler a array começando por 
+  // 0 que é o 1, deppis falando que ele vai usar apenas e todos os numeros que estão 
+  // na array e por ultimo fala que ele vai someando mais um a variavel pra ir somando 
+  // os outros numeros da array.
+    soma += 2 * numeros[i]; // aqui é onde ocorre a soma e a multiplicação dos valores.
+  }
+  return soma;
+}
+console.log(somaArray([1, 2, 3, 4])); // e aqui é onde fala pra imprimar a resposta.
+```
 ______
 10) Crie um exemplo prático no qual você tenha duas classes:
 
 - Uma classe `Produto` com atributos `nome` e `preco`, e um método `calcularDesconto()` que aplica um desconto fixo de 10% no preço do produto.
 - Uma classe `Livro` que herda de `Produto` e modifica o método `calcularDesconto()`, aplicando um desconto de 20% no preço dos livros.
 
-Explique como funciona a herança nesse contexto e como você implementaria a modificação do método na classe `Livro`.
+Meu código:
+```javascript
+class Produto { //criando a classe produto
+  constructor(nome, preco) {
+    this.nome = nome; //crindo as propriedades da classe produto
+    this.preco = preco;
+  }
+
+  calcularDesconto() { // crinado função para calcular o preço 
+    let desconto = this.preco * 0.10; //calculando os 105 do preço
+    let precoComDesconto = this.preco - desconto; //subtraindo os 10% do preço original
+    return precoComDesconto;
+  }
+}
+
+class Livro extends Produto { //criando uma outra classe que herda as propriedades da classe produto
+  constructor(nome, preco) {
+    super(nome, preco); //chamando as propriedades herdadas
+  }
+  calcularDesconto() {  // crinado função para calcular o preço 
+    const desconto = this.preco * 0.20; //calculando os 105 do preço
+    const precoComDesconto = this.preco - desconto; //subtraindo os 10% do preço original
+    return precoComDesconto;
+  }
+}
+
+let produto = new Produto ("faca", 40); //crinado um produto na classe produto
+let livro = new Livro ("your name", 65);  //criando um livro na classe livro
+//imprimindo o nome, o preço e preço com desconte dos novos produtos
+console.log(`produto: ${produto.nome}, valor original: ${produto.preco}, mas você ganhou 10% de desconto, que fica: ${produto.calcularDesconto()}`);
+console.log(`produto: ${livro.nome}, valor original: ${livro.preco}, mas você ganhou 20% de desconto, que fica: ${livro.calcularDesconto()}`);
+```
